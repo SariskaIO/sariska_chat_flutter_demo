@@ -2,15 +2,18 @@
 
 A new Flutter project.
 
-## Getting Started
+## Running App
 
-This project is a starting point for a Flutter application.
+### Generate api key
 
-A few resources to get you started if this is your first Flutter project:
+Generate the api key from console.sariska.io
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Changes in the app
+1. Add api key at lib/util.dart {your-api-key}
+2. Add room name at lib/SariskaChatHome.dart, replacing {your-room-name}
+3. To test out the chat functionality, either join the same room name at 
+   chat.sariska.io or run the app on another device.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Documentation
+https://docs.sariska.io/real-time-messaging/development/dart
+

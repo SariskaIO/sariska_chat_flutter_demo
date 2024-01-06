@@ -32,7 +32,7 @@ class _SariskaChatHomeState extends State<SariskaChatHome>
         "wss://api.sariska.io/api/v1/messaging/websocket",
         socketOptions: options);
     await socket.connect();
-    _channel = socket.channel("chat:randomrrrr");
+    _channel = socket.channel("chat:{your-room-name}");
     _channel.on("new_message", _say);
     _channel.join();
   }
